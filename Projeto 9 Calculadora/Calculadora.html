@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        #calculadora{
+            border-radius: 20px;
+            height: 410px;
+            width: 301px;
+            background: black;
+            margin-left: 30%;
+        }
+        .botão{
+            width: 70px;
+            height: 65px;
+            padding: 5px;
+            margin: 1px;
+            border-radius: 15px;
+
+        }
+        .botãoo{
+            width: 144px;
+            height: 65px;
+            padding: 5px;
+            margin: 2px;
+            border-radius: 15px;
+        }
+        #tela{
+            background: white;
+            color: black;
+            border-radius: 15px;
+            margin-top: 10px;
+            margin-left: 50px;
+            width: 190px;
+            height: 40px ;
+            text-align: right;
+        }
+        .botãooc{
+            width: 220px;
+            height: 65px;
+            padding: 5px;
+            margin: 2px;
+            border-radius: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="calculadora">
+        <div>
+            <input id="tela" type="text" disabled="disabled" placeholder="0">
+        </div>
+        <div>
+            <button onclick="calcular('ope','c' )" class="botãooc"> C</button>
+            <button onclick="calcular('operador','/' )" class="botão">/</button>
+        </div>
+        <div>
+            <button onclick="calcular('num', 7 )" class="botão">7</button>
+            <button onclick="calcular('num',8 )" class="botão">8</button>
+            <button onclick="calcular('num',9 )" class="botão">9</button>
+            <button onclick="calcular('ope','*' )" class="botão">*</button>
+        </div>
+        <div>
+            <button onclick="calcular('num', 4 )" class="botão">4</button>
+            <button onclick="calcular('num', 5 )" class="botão">5</button>
+            <button onclick="calcular('num', 6 )" class="botão">6</button>
+            <button onclick="calcular('ope', '-' )" class="botão">-</button>
+        </div>
+        <div>
+            <button onclick="calcular('num', 1 )" class="botão">1</button>
+            <button onclick="calcular('num', 2 )" class="botão">2</button>
+            <button onclick="calcular('num', 3 )" class="botão">3</button>
+            <button onclick="calcular('ope','+' )" class="botão">+</button>
+        </div>
+        <div>
+            <button onclick="calcular('num', 0 )" class="botão">0</button>
+            <button onclick="calcular('ope', '.' )" class="botão">.</button>
+            <button onclick="calcular('ope', '=' )" class="botãoo">=</button>
+        </div>
+    </div>
+    <script>
+
+        function calcular(tipo, valor) {
+
+              if (tipo === 'ope') {
+                  if(valor === 'c'){
+                     document.getElementById('tela').value = ''   
+                  }
+                  else if (valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.'){
+                    document.getElementById('tela').value += valor 
+                  }
+                  else(valor === '=')
+                  {
+                    var valor_campo = eval(document.getElementById('tela').value)
+                    document.getElementById('tela').value = valor_campo
+                  }
+            } 
+            else ( tipo === 'num') 
+            {
+                document.getElementById('tela').value += valor 
+             }
+        }
+
+    </script>
+</body>
+</html>
+<!-- <script>
+   function calcular(tipo, valor){
+      if(tipo === 'acao') {
+        if(valor === 'c'){
+          //limpar o visor
+          document.getElementById('resultado').value = ''
+        }
+        if(valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.'){
+          document.getElementById('resultado').value += valor
+        }
+        if(valor === '=') {
+          var valor_campo = eval(document.getElementById('resultado').value)
+          document.getElementById('resultado').value = valor_campo
+        }
+      } else if (tipo === 'valor') {
+
+        document.getElementById('resultado').value += valor
+      }
+    }
+  </script> -->

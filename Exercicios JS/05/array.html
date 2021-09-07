@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <input id='texto' type="text">
+    <button  id="add" onclick="adicionar()" >Adicionar</button>
+    <button onclick="ordenarObjetos()" >Ordenar</button>
+    <script>
+        var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+             function adicionar(){
+
+                var tex = document.getElementById('texto').value
+
+                if (tex != "") {
+        
+                    if (objetos.indexOf(tex) !== -1){
+                        alert('Valor ja existe!')  
+                    }
+                    else {
+                        objetos.push(tex)
+                        document.getElementById('texto').value = ""
+                        console.log(objetos)
+                        
+                    }
+                }
+                else{
+                    alert("Informar valor valido!")
+                }
+            }
+
+            function ordenarObjetos() {
+                objetos.sort()
+                console.log(objetos)
+            }
+    </script>
+</body>
+</html>

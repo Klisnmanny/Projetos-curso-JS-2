@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+         
+        class Sofa{
+            
+            constructor(lugares,reclinavel,cor){
+            this.lugares = lugares
+            this.reclinavel = reclinavel
+            this.cor = cor
+            }
+
+            deitar_Reclinavel(){
+                if (this.reclinavel === true){
+                    console.log('deitou')
+                }
+                else{
+                    console.log('Não deita')
+                }
+
+            }
+
+        }
+
+        let sofa = new Sofa(3 , true , 'cinza')
+            sofa.deitar_Reclinavel()
+        let sofa1 = new Sofa(5 , false , 'branco')
+            sofa1.deitar_Reclinavel()
+
+    </script>
+    
+</body>
+</html>

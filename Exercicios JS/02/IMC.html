@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var nome = prompt("Qual seu nome?")
+        var altura = prompt("Qual sua altura?")
+        var peso = prompt("Qual seu peso?")
+
+        altura=parseFloat(altura)
+        peso = parseFloat(peso)
+
+
+        var massa = peso/(altura*altura)
+
+        if (massa<16) {
+            var indice = "Baixo peso muito grave"
+
+        }
+        else if(massa>=16 && massa < 16.99){
+            var indice = "Baixo peso grave"
+        }
+        else if(massa>=17 && massa<18.49){
+            var indice = "Baixo peso"
+        }
+        else if(massa>=18.50 && massa< 24.99){
+            var indice = "Peso normal"
+        }
+        else if(massa>=25 && massa<29.99){
+            var indice = "Sobrepeso"
+        }
+        else if(massa>=30 && massa<34.99){
+            var indice = "Obesidade grau I"
+        }
+        else if(massa>=35 && massa<39.99){
+            var indice = "Obesidade grau II"
+        }
+        else if(massa>=40){
+            var indice = "Obesidade grau III"
+        }
+        document.write(
+        `${nome} possui índice de massa corporal igual a ${massa}, sendo classificado como : ${indice}`
+)
+
+
+
+      
+
+       /* switch (massa) {
+            case massa<16:
+                 var indice = "Baixo peso muito grave"
+                break;
+                case massa>=16 && massa < 16.99:
+                 var indice = "Baixo peso grave"
+                break;
+                case massa>=17 && massa<18.49:
+                 var indice = "Baixo peso"
+                break;
+                case massa>=18.50 && massa< 24.99:
+                 var indice = "Peso normal"
+                break;
+                case massa>=25 && massa<29.99:
+                 var indice = "Sobrepeso"
+                break;
+                case massa>=30 && massa<34.99:
+                 var indice = "Obesidade grau I"
+                break;
+                case massa>=35 && massa<39.99:
+                 var indice = "Obesidade grau II"
+                break;
+                case massa>=40:
+                 var indice = "Obesidade grau III"
+                break;             
+        }
+    */
+   
+
+
+    </script>
+</head>
+<body>
+ 
+</body>
+</html>

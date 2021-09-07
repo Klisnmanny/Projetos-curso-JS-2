@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #fff url(noticias-cidade/imagens/fundo.png) repeat-x;
+}
+#tudo{
+    margin: 0px auto;
+    width: 750px;
+}
+#top {
+    background: url(noticias-cidade/imagens/detalhe-topo.png) no-repeat right top;
+    height: 175px;
+}
+.logo{
+    margin-top: 15px;
+    width: 152px;
+    height: 66px;
+    background: url(noticias-cidade/imagens/logo.png) no-repeat center;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#top ul {
+    background:#b10333;
+    margin-top: 30px;
+    float:left;
+}
+#top ul li{
+      float:left;
+}
+#top ul a{
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height:2.1em ; /*aumentou a altura da barra de manu*/
+    color: #fff;
+    text-decoration: none ;/* Remove o sublinhado*/
+    background: url(noticias-cidade/imagens/divisor.png) repeat-y; 
+}
+#top ul a:hover{
+    color: #69001d;
+    background: #de003e;
+    padding: 10px;
+}
+#meio{
+    margin-top: 60px;
+   
+}
+#trescolunas #pri{
+    width: 265px;
+    float: left;
+    margin: 0 0 20px 195px;
+  
+   
+}
+#duascolunas #pri{
+    width: 555px;
+ 
+    float: left;
+    margin: 0 0 20px 195px;
+}
+#umcoluna #pri{
+     margin: 0 0 20px 0px;
+}
+
+
+#seg{
+    width: 270px;
+    float: left;
+    margin: 0 0px 20px 13px;
+ 
+}
+#ter{
+    width: 180px;
+    float: left;
+    margin: 0 0px 20px -750px;
+   
+    
+}
+#pe{
+    clear: both;
+    background:#294c71; 
+    padding: 20px;
+}
+#rodape{
+   text-align: center;
+   width: 750px;
+   color: white;
+}
+.caixa{
+    background: #f3f3f3 url(noticias-cidade/imagens/fundo-caixa.png);
+    margin-top: 5px;
+    padding: 5px;
+}
+.caixa h2{
+    font-size: 1em;
+    background: #294c71;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    margin: 5px 5px;
+}
+.caixa-cont{
+    background: #fff;
+
+}
+#menu{
+    background: #fff;
+    margin: 10px 5px 10px 5px;
+    padding: 5px 5px;
+    
+}
+#menu ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;   
+}
+#menu ul a:hover {
+    background: url(noticias-cidade/imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;
+    color: #a1a1a1;
+}
+label{
+    display: block;
+    cursor: pointer;
+}
+input{
+    font-size: 0.9em;
+    background-color: #fff;
+    width: 110px;
+    padding: 5px;
+
+} 
+
+input.submit{
+    width: 80px;
+    color: #fff;
+    background-color: #b10333 ;
+    border: 2px solid #870529;
+}
+img.prim {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+    background: #de003e;
+    
+}
+.destaque h3{
+
+    background: #b10333;
+    color: #fff;
+}
+.caixa-outros{
+    background: #fff;
+
+}
+.caixa-outros ul li {
+    padding: 3px;
+    border-bottom: 1px solid #ccc; 
+    height: 65px;  
+}
+.caixa-outros li a img {
+   float: left; 
+   margin: 5px; 
+}
+.caixa-outros li a  {
+  text-decoration: none;
+ 
+ }
+ .caixa-outros li a h3  {
+    padding: 0;
+    font-size: 0.8em;
+    color:#3e7ab9;
+   }
+   .caixa-outros li a p {
+    color: #000;
+    font-size: 0.7em;
+   }
+   .caixa-outros li:hover {
+    background: #eee;
+    cursor: pointer;
+   } 

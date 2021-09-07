@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="mosca.js"></script>       
+</head>
+
+<body onresize="tamanhotela()">
+
+    <div id='painel'>
+        <div id='vidas'>
+            <img id='vidas0' src="imagens/coracao_cheio.png" alt="">
+            <img id='vidas1' src="imagens/coracao_cheio.png" alt="">
+            <img id='vidas2' src="imagens/coracao_cheio.png" alt="">
+
+        </div>
+        <div id='tempo'>
+            TEMPO
+            <span id='relogio'> </span>
+
+        </div>
+    </div>
+
+   <script> 
+   var criarmosca = setInterval (function(){             //faz uma contatgem de 1s ate rodar a funçao
+    posicaoAleatoria()
+   },criarmoscatempo)
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body{
+
+    background: gray;
+}
+ 
+ul{
+    
+margin: 0;
+padding: 0;
+list-style-type: none;
+
+}
+ul a{ 
+    
+    width: 200px;
+    height: 40px;
+    display: block;
+    background: #f7b600 url(menu.png);
+    color: black;
+    text-decoration: none; /* altura da linha*/
+    text-indent: 45px; /* identação do texto*/
+    line-height: 40px;
+   
+
+
+}
+a:hover{
+    background-position: right bottom;
+    background-color: #f99200;  
+    color:  white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#umm {
+    border: solid 1px red;
+    list-style-type: none; /* remove os pontos da lista*/
+ /*   padding: 0; /* espaçamento interno*/
+  /*  margin: 0; /* espeçamento externo */ /*
+}
+.um{
+padding:  5px 20px;
+/*border: solid 1px red;*//*
+background: url(seta.png) no-repeat left center;
+} */
+
